@@ -15,9 +15,16 @@ export default class Button extends React.Component {
       border-radius: ${ props => props.theme.border.radius};
       background-color: ${ props => this.props.primary ? props.theme.color.primary : props.theme.color.secondary};
 
-      &: hover {
+      &:hover {
         background-color: ${ props => this.props.primary ? props.theme.color.primaryDark : props.theme.color.secondaryDark};
         transition: background-color 200ms ease;
+        text-decoration: underline;
+      }
+
+      &:focus {
+        outline: 2px dotted ${props => props.theme.color.light};
+        outline-offset: -2px;
+        text-decoration: underline;
       }
       `;
 

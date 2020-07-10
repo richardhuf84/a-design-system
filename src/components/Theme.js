@@ -13,7 +13,8 @@ const theme = {
     dark: `#2B2C4A`
   },
   border: {
-    radius: `5px`
+    radius: `5px`,
+    size: `2px`
   },
   typography: {
     family: 'Montserrat, sans-serif',

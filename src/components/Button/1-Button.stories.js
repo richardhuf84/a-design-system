@@ -16,7 +16,7 @@ Primary.story = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=20%3A1',
+      url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A0',
       allowFullscreen: true,
     },
   },
@@ -29,7 +29,7 @@ Secondary.story = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=20%3A1',
+      url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A17',
       allowFullscreen: true,
     },
   },
