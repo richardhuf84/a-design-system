@@ -24,7 +24,7 @@ Primary.story = {
 
 export const Secondary = () => <Button onClick={action('clicked')} secondary label="Secondary Button" />;
 
-Primary.story = {
+Secondary.story = {
   name: 'Button Secondary',
   parameters: {
     design: {
