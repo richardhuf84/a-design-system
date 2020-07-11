@@ -3,14 +3,29 @@ import { ThemeProvider } from 'styled-components';
 
 const theme = {
   color: {
-    primary: `#8487FF`,
-    primaryDark: `#5256FF`,
-    secondary: `#B37CFF`,
-    secondaryDark: `#9447FF`,
-    tertiary: `#78C7FF`,
-    tertiaryDark: `#18192A`,
-    light: `#FFF`,
-    dark: `#2B2C4A`
+    primary: {
+      default: `#8487FF`,
+      dark: '#5256FF',
+      light: `#A9ABDA`
+    },
+    secondary: {
+      default: `#B37CFF`,
+      dark: `#9447FF`,
+      light: `#B8A2D7`
+    },
+    tertiary: {
+      default: `#78C7FF`,
+      dark: `#18192A`,
+      light: `#A1C0D6`
+    },
+    dark: {
+      default: `#2B2C4A`,
+      dark: `#18192A`,
+      light: `#3B3B3B`
+    },
+    light: {
+      default: `#FFFFFF`
+    }
   },
   border: {
     radius: `5px`,

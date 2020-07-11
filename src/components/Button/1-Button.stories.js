@@ -1,15 +1,16 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs'
 import { action } from '@storybook/addon-actions';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 import Button from './Button';
 
 export default {
   title: 'Button',
   component: Button,
-  decorators: [withDesign],
+  decorators: [withDesign, withKnobs],
 };
 
-export const Primary = () => <Button onClick={action('clicked')} primary label="Primary Button" />;
+export const Primary = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} primary label="Primary Button" />;
 
 Primary.story = {
   name: 'Button Primary',
@@ -22,7 +23,7 @@ Primary.story = {
   },
 }
 
-export const Secondary = () => <Button onClick={action('clicked')} secondary label="Secondary Button" />;
+export const Secondary = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} secondary label="Secondary Button" />;
 
 Secondary.story = {
   name: 'Button Secondary',
