@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import Theme from '../Theme';
+import Theme from '../../Theme';
 export default class Button extends React.Component {
 
   render() {
@@ -29,6 +29,7 @@ export default class Button extends React.Component {
 
       &:disabled {
         background-color: ${props => this.props.primary ? props.theme.color.primary.light : props.theme.color.secondary.light};
+        cursor: not-allowed;
       }
       `;
 
