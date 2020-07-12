@@ -25,6 +25,9 @@ const theme = {
     },
     light: {
       default: `#FFFFFF`
+    },
+    grey: {
+      default: `#9B9B9B`
     }
   },
   border: {

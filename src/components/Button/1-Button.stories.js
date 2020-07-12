@@ -36,3 +36,16 @@ Secondary.story = {
   },
 }
 
+export const Tertiary = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} tertiary label="Tertiary Button" />;
+
+Tertiary.story = {
+  name: 'Button Tertiary',
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=191%3A0',
+      allowFullscreen: true,
+    },
+  },
+}
+
