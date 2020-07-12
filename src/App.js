@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import Button from './Button';
+import Button from './components/Button/Button';
 import './App.css';
 
 function App() {
@@ -20,8 +20,15 @@ function App() {
           Learn React
         </a>
 
+        <div style={{ margin: '20px' }}>
+          <Button primary label="Button primary" />
+
+          <Button secondary label="Button secondary" />
+
+          <Button tertiary label="Button tertiary" />
+        </div>
       </header>
-    </div>
+    </div >
   );
 }
 
