@@ -43,7 +43,7 @@ Tertiary.story = {
   parameters: {
     design: {
       type: 'figma',
-      url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A17',
+      url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=191%3A0',
       allowFullscreen: true,
     },
   },
