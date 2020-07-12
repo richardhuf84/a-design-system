@@ -28,6 +28,7 @@ export default class Button extends React.Component {
       
       &.button {
         font-size: ${({ theme: { typography: { size: { body } } } }) => body}rem;
+        font-family: 'Montserrat', sans-serif;
         border: 0;
         text-align: center;
         font-weight: ${({ theme: { typography: { weight: { bold } } } }) => bold};
