@@ -13,7 +13,6 @@ const StyledButton = styled.button.attrs(props => ({
     padding: ${props => props.theme.spacing.s3}rem ${props => props.theme.spacing.s4}rem;
     color: ${ props => props.theme.color.light.default};
     border-radius: ${ props => props.theme.border.radius};
-    appearance: unset;
     
     &:hover {
       background-color: ${ props => props.theme.color.grey.default};
@@ -36,17 +35,43 @@ const StyledButton = styled.button.attrs(props => ({
     // TODO turn into a function
     ${props => props.primary &&
     css`
-      background-color: ${props.theme.color.primary.default}
+      background-color: ${props.theme.color.primary.default};
+
+      &:hover {
+        background-color: ${props.theme.color.primary.dark};
+      }
+
+      &:disabled {
+        background-color: ${props.theme.color.primary.light};
+      }
       `};
 
       ${props => props.secondary &&
     css`
-      background-color: ${props.theme.color.secondary.default}
+      background-color: ${props.theme.color.secondary.default};
+
+      &:hover {
+        background-color: ${props.theme.color.secondary.dark};
+      }
+
+      &:disabled {
+        background-color: ${props.theme.color.secondary.light};
+      }
+
       `};
 
       ${props => props.tertiary &&
     css`
-      background-color: ${props.theme.color.dark.default}
+      background-color: ${props.theme.color.dark.default};
+
+      &:hover {
+        background-color: ${props.theme.color.dark.dark};
+      }
+
+      &:disabled {
+        background-color: ${props.theme.color.dark.light};
+      }
+
       `};
 `;
 
