@@ -5,11 +5,11 @@ import Theme from '../../Theme';
 const StyledButton = styled.button.attrs(props => ({
   disabled: props.disabled
 }))`
-    font-size: ${({ theme: { typography: { size: { body } } } }) => body}rem;
+    font-size: ${props => props.theme.typography.size.body}rem;
     font-family: 'Montserrat', sans-serif;
     border: 0;
     text-align: center;
-    font-weight: ${({ theme: { typography: { weight: { bold } } } }) => bold};
+    font-weight: ${props => props.theme.typography.weight.bold};
     padding: ${props => props.theme.spacing.s3}rem ${props => props.theme.spacing.s4}rem;
     color: ${ props => props.theme.color.light.default};
     border-radius: ${ props => props.theme.border.radius};
