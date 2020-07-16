@@ -2,6 +2,19 @@ import React from "react";
 import styled, { css } from 'styled-components';
 import Theme from '../../Theme';
 
+const CSSPseudoClasses = (props, type, css) => props[type.namespace] &&
+  css`
+    background-color: ${props.theme.color[type.alias].default};
+
+    &:hover {
+      background-color: ${props.theme.color[type.alias].dark};
+    }
+
+    &:disabled {
+      background-color: ${props.theme.color[type.alias].light};
+    }
+  `;
+
 const StyledButton = styled.button.attrs(props => ({
   disabled: props.disabled
 }))`
@@ -31,48 +44,11 @@ const StyledButton = styled.button.attrs(props => ({
       cursor: not-allowed;
     }
 
+    ${props => CSSPseudoClasses(props, { namespace: 'primary', alias: 'primary' }, css)}
 
-    // TODO turn into a function
-    ${props => props.primary &&
-    css`
-      background-color: ${props.theme.color.primary.default};
+    ${props => CSSPseudoClasses(props, { namespace: 'secondary', alias: 'secondary' }, css)}
 
-      &:hover {
-        background-color: ${props.theme.color.primary.dark};
-      }
-
-      &:disabled {
-        background-color: ${props.theme.color.primary.light};
-      }
-      `};
-
-      ${props => props.secondary &&
-    css`
-      background-color: ${props.theme.color.secondary.default};
-
-      &:hover {
-        background-color: ${props.theme.color.secondary.dark};
-      }
-
-      &:disabled {
-        background-color: ${props.theme.color.secondary.light};
-      }
-
-      `};
-
-      ${props => props.tertiary &&
-    css`
-      background-color: ${props.theme.color.dark.default};
-
-      &:hover {
-        background-color: ${props.theme.color.dark.dark};
-      }
-
-      &:disabled {
-        background-color: ${props.theme.color.dark.light};
-      }
-
-      `};
+    ${props => CSSPseudoClasses(props, { namespace: 'tertiary', alias: 'dark' }, css)}
 `;
 
 
