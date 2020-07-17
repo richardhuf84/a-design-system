@@ -9,6 +9,7 @@ module.exports = {
     '@storybook/addon-storysource',
     '@storybook/addon-a11y',
     '@storybook/addon-backgrounds/register',
-    '@storybook/addon-knobs/register'
+    '@storybook/addon-knobs/register',
+    'storybook-addon-jsx'
   ],
 };
