@@ -34,11 +34,12 @@ const theme = {
     radius: `5px`,
     size: `2px`
   },
-  typography: {
+  font: {
     family: 'Montserrat, sans-serif',
     weight: {
       regular: 400,
-      bold: 700
+      bold: 700,
+      black: 900
     },
     lineHeight: {
       default: 1.5,
