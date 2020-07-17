@@ -6,8 +6,13 @@ const CSSPseudoClasses = (props, type, css) => props[type.namespace] &&
   css`
     background-color: ${props.theme.color[type.alias].default};
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus {
       background-color: ${props.theme.color[type.alias].dark};
+      transform: scale(1.03);
+      transition: transform 150ms ease;
+      cursor: pointer;
     }
 
     &:disabled {
@@ -18,11 +23,11 @@ const CSSPseudoClasses = (props, type, css) => props[type.namespace] &&
 const StyledButton = styled.button.attrs(props => ({
   disabled: props.disabled
 }))`
-    font-size: ${props => props.theme.typography.size.body}rem;
+    font-size: ${props => props.theme.font.size.body}rem;
     font-family: 'Montserrat', sans-serif;
     border: 0;
     text-align: center;
-    font-weight: ${props => props.theme.typography.weight.bold};
+    font-weight: ${props => props.theme.font.weight.bold};
     padding: ${props => props.theme.spacing.s3}rem ${props => props.theme.spacing.s4}rem;
     color: ${ props => props.theme.color.light.default};
     border-radius: ${ props => props.theme.border.radius};
