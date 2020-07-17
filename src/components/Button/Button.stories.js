@@ -5,8 +5,6 @@ import { withKnobs, boolean } from '@storybook/addon-knobs';
 import createStory from '../../helpers/createStory.helper';
 import Button from './Button';
 
-
-
 export default {
   title: 'Button',
   component: Button,
