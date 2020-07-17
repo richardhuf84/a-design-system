@@ -7,6 +7,7 @@ const StyledColor = styled.div`
   background-color: ${props => props.theme.color[props.color].default};
   width: 10rem;
   height: 4rem;
+  outline: 1px solid ${props => props.theme.color.grey.default};
 `;
 
 const Color = props => <Theme>

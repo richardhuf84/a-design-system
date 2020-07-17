@@ -17,3 +17,10 @@ export const ColorPrimary = () => <Color color="primary" />;
 export const ColorSecondary = () => <Color color="secondary" />;
 
 export const ColorTertiary = () => <Color color="tertiary" />;
+
+export const ColorDark = () => <Color color="dark" />;
+
+export const ColorLight = () => <Color color="light" />;
+
+export const ColorGrey = () => <Color color="grey" />;
+
