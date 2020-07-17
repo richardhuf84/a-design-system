@@ -5,11 +5,19 @@ import { withKnobs, boolean } from '@storybook/addon-knobs';
 import createStory from '../../helpers/createStory.helper';
 import Button from './Button';
 
+
+
 export default {
   title: 'Button',
   component: Button,
   decorators: [withDesign, withKnobs],
+  parameters: {
+    componentSubtitle: 'Buttons are utilized to initiate an action.'
+  }
 };
+
+export const Default = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} />;
+
 
 export const Primary = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} primary label="Primary Button" />;
 

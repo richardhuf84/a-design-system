@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 import Theme from '../../Theme';
 
 const CSSPseudoClasses = (props, type, css) => props[type.namespace] &&
@@ -56,12 +57,36 @@ const StyledButton = styled.button.attrs(props => ({
     ${props => CSSPseudoClasses(props, { namespace: 'tertiary', alias: 'dark' }, css)}
 `;
 
-
-export default (props) => {
+/**
+ * Use `Button` to create a CTA on the page. 
+ * 
+ * Buttons can be rendered as either a button element, or an anchor tag.
+ * 
+ * When used to trigger javascript behaviour, a button element is appropriate. If navigating to a url, an anchor tag is appropriate.
+ * 
+ * We provide 3 variants. Primary, Secondary and Tertiary.
+ */
+const Button = props => {
   return (<Theme>
     <StyledButton {...props}>{props.label}</StyledButton>
   </Theme>
   )
 };
 
+Button.propTypes = {
+  primary: PropTypes.bool,
+  secondary: PropTypes.bool,
+  tertiary: PropTypes.bool,
+  disabled: PropTypes.bool,
+  label: PropTypes.string
+}
 
+Button.defaultProps = {
+  primary: false,
+  secondary: false,
+  tertiary: false,
+  disabled: false,
+  label: 'Default button'
+}
+
+export default Button;
