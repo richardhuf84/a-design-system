@@ -19,7 +19,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "svgr": "npx @svgr/cli -d src/components/Icons/ assets/icons"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -47,6 +48,7 @@
     "@storybook/preset-create-react-app": "^3.1.3",
     "@storybook/react": "^5.3.19",
     "prettier": "^2.0.5",
-    "storybook-addon-designs": "^5.4.0"
+    "storybook-addon-designs": "^5.4.0",
+    "storybook-addon-jsx": "^7.3.2"
   }
 }
