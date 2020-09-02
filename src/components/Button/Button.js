@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import Theme from '../../Theme';
+import Theme from '../../theme';
 
 const CSSPseudoClasses = (props, type, css) => props[type.namespace] &&
   css`

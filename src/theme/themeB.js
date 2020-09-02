@@ -1,10 +1,8 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
-
-const theme = {
+const themeB = {
+  name: 'themeB',
   color: {
     primary: {
-      default: `#8487FF`,
+      default: `#FF0000`,
       dark: '#5256FF',
       light: `#A9ABDA`
     },
@@ -69,9 +67,4 @@ const theme = {
   }
 };
 
-const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
-);
-
-export default Theme;
-
+export default themeB;

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import Theme from '../../Theme';
+import Theme from '../../theme';
 import Text from '../Text/Text'
 
 const StyledColor = styled.div`

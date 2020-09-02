@@ -9,3 +9,7 @@ A design system built with Figma, Storybook and React, and Styled Components.
 ## Visual Regression Testing with Chromatic
 
 [View latest Chromatic library](https://www.chromatic.com/library?appId=5f12b55efac875002286dfb6&branch=develop)
+
+## npm scripts
+
+yarn chromatic --project-token <token>
