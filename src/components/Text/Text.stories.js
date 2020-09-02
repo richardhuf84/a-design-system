@@ -1,7 +1,7 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs'
-import { withKnobs, select, text } from '@storybook/addon-knobs';
-import createStory from '../../helpers/createStory.helper';
+import { withKnobs, select } from '@storybook/addon-knobs';
+// import createStory from '../../helpers/createStory.helper';
 import Text from './Text';
 
 export default {
@@ -15,26 +15,29 @@ const tags = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'small'];
 const defaultTag = 'p';
 const weights = ['regular', 'bold', 'black'];
 
-// export const typography = tags.map((tag) => {
-//   return <div>
-//     <Text tag="small" size="small" color="grey" style={{ display: 'block' }}>{tag}</Text>
-//     <Text
-//       tag={tag}
-//       size={tag}
-//       weight="regular"
-//       color="dark"
-//       key={tag}
-//     >
-//       {textContent}
-//     </Text >
-//   </div >
-// });
+const Template = args => <Text {...args} />;
 
-export const paragraph = () =>
-  <Text tag={select('Tag', tags, defaultTag)} size={select('Size', tags, defaultTag)} weight={select('Weight', weights, 'regular')} color="dark">{textContent}</Text >;
+export const paragraph = Template.bind({});
 
-export const small = () => <Text tag="small" size="small" weight={select('Weight', weights, 'regular')} color="dark">{textContent}</Text>;
+paragraph.args = {
+  tag: select('Tag', tags, defaultTag),
+  size: select('Size', tags, defaultTag),
+  weight: select('Weight', weights, 'regular'),
+  color: 'dark',
+  children: textContent
+};
 
-createStory(paragraph, 'Paragraph', 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=231%3A54');
+export const small = Template.bind({});
+
+small.args = {
+  tag: 'small',
+  size: 'small',
+  weight: select('Weight', weights, 'regular'),
+  color: "dark"
+}
+
+// export const small = () => <Text tag="small" size="small" weight={select('Weight', weights, 'regular')} color="dark">{textContent}</Text>;
+
+// createStory(paragraph, 'Paragraph', 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=231%3A54');
 
 // createStory(typography, 'Typography', 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=231%3A54');

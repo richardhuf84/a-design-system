@@ -11,18 +11,42 @@ export default {
   decorators: [withDesign, withKnobs],
   parameters: {
     componentSubtitle: 'Buttons are utilized to initiate an action.'
+  },
+  args: {
+    disabled: boolean("Disabled", false),
+    onClick: action('clicked')
   }
 };
 
-export const Default = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} />;
+const Template = (args) => <Button {...args} />;
 
+export const Default = Template.bind({});
 
-export const Primary = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} primary label="Primary Button" />;
+Default.args = {
+  label: "Default Button",
+};
 
+export const Primary = Template.bind({});
 
-export const Secondary = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} secondary label="Secondary Button" />;
+Primary.args = {
+  label: "Primary Button",
+  primary: true
+};
 
-export const Tertiary = () => <Button disabled={boolean("Disabled", false)} onClick={action('clicked')} tertiary label="Tertiary Button" />;
+export const Secondary = Template.bind({});
+
+Secondary.args = {
+  label: "Secondary Button",
+  secondary: true
+}
+
+export const Tertiary = Template.bind({});
+
+Tertiary.args = {
+  label: "Tertiary Button",
+  tertiary: true
+}
+
 
 createStory(Primary, 'Button Primary', 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A0')
 

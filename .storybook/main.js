@@ -8,8 +8,9 @@ module.exports = {
     'storybook-addon-designs',
     '@storybook/addon-storysource',
     '@storybook/addon-a11y',
-    '@storybook/addon-backgrounds/register',
-    '@storybook/addon-knobs/register',
-    'storybook-addon-jsx'
+    '@storybook/addon-backgrounds',
+    '@storybook/addon-knobs',
+    'storybook-addon-jsx',
+    '@storybook/preset-create-react-app'
   ],
 };

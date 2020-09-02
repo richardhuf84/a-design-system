@@ -23,7 +23,7 @@ const Text = props => {
 Text.propTypes = {
   color: PropTypes.oneOf(['primary', 'secondary', 'tertiary', 'dark', 'light']),
   children: PropTypes.string,
-  size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'body', 'small']),
+  size: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'small']),
   weight: PropTypes.oneOf(['regular', 'bold', 'black'])
 }
 
