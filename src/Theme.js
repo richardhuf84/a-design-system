@@ -31,7 +31,7 @@ const theme = {
     }
   },
   border: {
-    radius: `20px`,
+    radius: `8px`,
     size: `2px`
   },
   font: {

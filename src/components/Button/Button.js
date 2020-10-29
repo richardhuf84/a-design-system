@@ -29,12 +29,12 @@ const StyledButton = styled.button.attrs(props => ({
     border: 0;
     text-align: center;
     font-weight: ${props => props.theme.font.weight.bold};
-    padding: ${props => props.theme.spacing.s3}rem ${props => props.theme.spacing.s4}rem;
-    color: ${ props => props.theme.color.light.default};
-    border-radius: ${ props => props.theme.border.radius};
+    padding: ${props => props.theme.spacing.s2}rem ${props => props.theme.spacing.s2}rem;
+    color: ${props => props.theme.color.light.default};
+    border-radius: ${props => props.theme.border.radius};
     
     &:hover {
-      background-color: ${ props => props.theme.color.grey.default};
+      background-color: ${props => props.theme.color.grey.default};
       transition: background-color 200ms ease;
       text-decoration: underline;
     }
