@@ -2,9 +2,9 @@
 
 A design system built with Figma, Storybook and React, and Styled Components. 
 
-**Work in progress**
+🌊 **Work in progress** 
 
-[View Storybook](http://www.a-design-system.richardhuf.com.au/?path=/story/button--primary)
+[View Storybook](http://a-design-system.richardhuf.com.au/?path=/story/button--primary)
 
 ## Visual Regression Testing with Chromatic
 
