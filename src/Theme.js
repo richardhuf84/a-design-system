@@ -34,6 +34,10 @@ const theme = {
     radius: `8px`,
     size: `2px`
   },
+  boxShadow: {
+    small: `${tokens.ShadowSmall.x}px ${tokens.ShadowSmall.y}px ${tokens.ShadowSmall.blur}px ${tokens.ShadowSmall.color}`,
+    large: `${tokens.ShadowLarge.x}px ${tokens.ShadowLarge.y}px ${tokens.ShadowLarge.blur}px ${tokens.ShadowLarge.color}`,
+  },
   font: {
     family: 'Montserrat, sans-serif',
     weight: {
