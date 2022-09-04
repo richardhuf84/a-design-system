@@ -1,6 +1,5 @@
 import * as tokens from './tokens.js';
 console.log(tokens)
-const spacingBase = 4;
 
 const theme = {
   color: {
@@ -58,15 +57,11 @@ const theme = {
     }
   },
   spacing: {
-    s0: 0,
-    s1: 0.25 * spacingBase,   // 4
-    s2: 0.5 * spacingBase,    // 8
-    s3: 1 * spacingBase,      // 16
-    s4: 1.5 * spacingBase,    // 24
-    s5: 2 * spacingBase,      // 32
-    s6: 2.5 * spacingBase,    // 40
-    s7: 3 * spacingBase,      // 48
-    s8: 3.5 * spacingBase     // 56
+    0: 0,
+    1: tokens.SpacingSm,
+    2: tokens.SpacingMd,
+    3: tokens.SpacingLg,
+    4: tokens.SpacingXl
   }
 };
 

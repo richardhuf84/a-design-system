@@ -28,7 +28,7 @@ const StyledButton = styled.button.attrs(props => ({
     border: 0;
     text-align: center;
     font-weight: ${props => props.theme.font.weight.bold};
-    padding: ${props => props.theme.spacing.s2}px ${props => props.theme.spacing.s2}rem;
+    padding: 12px 16px;
     color: ${props => props.theme.color.light.default};
     border-radius: ${props => props.theme.border.radius};
     
