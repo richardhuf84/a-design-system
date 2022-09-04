@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const StyledText = styled.p`
   font-family: ${props => props.theme.font.family};
   font-size: ${props => props.theme.font.size[props.size]}rem;
-  color: ${props => props.theme.color[props.color].default};
+  color: ${props => props.color ?? props.theme.color[props.color].default};
   font-weight: ${props => props.theme.font.weight[props.weight]}
 `;
 

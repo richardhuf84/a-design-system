@@ -17,6 +17,16 @@
       "value": "#9ba0de",
       "type": "color",
       "description": "Brand primary color"
+    },
+    "grey700": {
+      "value": "#777777",
+      "type": "color",
+      "description": "Grey"
+    },
+    "textColor": {
+      "value": "#777777",
+      "type": "color",
+      "description": "Brand primary color"
     }
   },
   "spacing": {

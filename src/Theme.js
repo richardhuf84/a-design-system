@@ -28,6 +28,9 @@ const theme = {
     },
     grey: {
       default: `#9B9B9B`
+    },
+    textColor: {
+      default: tokens.ColorsTextColor
     }
   },
   border: {
