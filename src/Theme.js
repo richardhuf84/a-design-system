@@ -1,19 +1,21 @@
+import * as tokens from './tokens.js';
+
 const spacingBase = 4;
 
 const theme = {
   color: {
     primary: {
-      default: `#8487FF`,
+      default: tokens.ColorsRed300,
       dark: '#5256FF',
       light: `#A9ABDA`
     },
     secondary: {
-      default: `#B37CFF`,
+      default: tokens.ColorsRed500,
       dark: `#9447FF`,
       light: `#B8A2D7`
     },
     tertiary: {
-      default: `#78C7FF`,
+      default: tokens.ColorsRed700,
       dark: `#18192A`,
       light: `#A1C0D6`
     },

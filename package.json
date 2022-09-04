@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "pre:build-storybook": "yarn run tokens:prepare && yarn run tokens:build",
+    "tokens": "yarn run tokens:prepare && yarn run tokens:build",
     "build-storybook": "build-storybook -s public",
     "svgr": "npx @svgr/cli -d src/components/Icons/ assets/icons",
     "tokens:prepare": "npx token-transformer public/tokens.json public/input.json",

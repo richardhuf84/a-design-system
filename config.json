@@ -1,12 +1,12 @@
 {
-  "source": ["tokens/**/*.json"],
+  "source": ["public/input.json"],
   "platforms": {
-    "css": {
-      "transformGroup": "css",
+    "js": {
+      "transformGroup": "js",
       "files": [
         {
-          "destination": "css/variables.css",
-          "format": "css/variables"
+          "destination": "src/tokens.js",
+          "format": "javascript/es6"
         }
       ]
     }
