@@ -1,14 +1,29 @@
 /**
  * Do not edit directly
- * Generated on Sun, 04 Sep 2022 05:07:39 GMT
+ * Generated on Sun, 04 Sep 2022 05:31:59 GMT
  */
 
-export const ColorsRed300 = "#FCA5A5";
-export const ColorsRed500 = "#EF4444";
-export const ColorsRed700 = "#B91C1C";
 export const ColorsBlack = "#000000";
 export const ColorsWhite = "#ffffff";
+export const ColorsBrandSecondary = "#72e5ec";
+export const ColorsBrandPrimary = "#9ba0de";
 export const SpacingSm = 4;
 export const SpacingMd = 8;
 export const SpacingLg = 16;
 export const SpacingXl = 32;
+export const ShadowSmall = {"color":"#0000001a","type":"dropShadow","x":0,"y":0,"blur":12,"spread":0};
+export const ShadowLarge = {"color":"#0000004d","type":"dropShadow","x":0,"y":0,"blur":24,"spread":0};
+export const FontFamiliesRoboto = "Roboto";
+export const FontFamiliesRaleway = "Raleway";
+export const LineHeights0 = 24;
+export const LineHeights1 = 32;
+export const FontWeightsRoboto0 = "Regular";
+export const FontWeightsRaleway1 = "Bold";
+export const FontSize0 = 16;
+export const FontSize1 = 24;
+export const LetterSpacing0 = "0%";
+export const ParagraphSpacing0 = 0;
+export const FontBody = {"fontFamily":"Roboto","fontWeight":"Regular","lineHeight":24,"fontSize":16,"letterSpacing":"0%","paragraphSpacing":0,"textCase":"none","textDecoration":"none"};
+export const FontHeading = {"fontFamily":"Raleway","fontWeight":"Bold","lineHeight":32,"fontSize":24,"letterSpacing":"0%","paragraphSpacing":0,"textCase":"none","textDecoration":"none"};
+export const TextCaseNone = "none";
+export const TextDecorationNone = "none";
