@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Theme from '../../Theme';
 
 const StyledIcon = styled.svg`
   color: ${props => props.color};
@@ -13,8 +12,7 @@ const StyledIcon = styled.svg`
  * @param {name} name of icon 
  * @param {color} color of icon
  */
-const Icon = props => <Theme>
+const Icon = props =>
   <StyledIcon className="icon">
     <use xlink: {`#${props.name}`} />
-    </StyledIcon>
-</Theme >;
+  </StyledIcon>;

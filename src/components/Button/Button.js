@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
-import Theme from '../../Theme';
 
 const CSSPseudoClasses = (props, type, css) => props[type.namespace] &&
   css`
@@ -67,9 +66,8 @@ const StyledButton = styled.button.attrs(props => ({
  * We provide 3 variants. Primary, Secondary and Tertiary.
  */
 const Button = props => {
-  return (<Theme>
+  return (
     <StyledButton {...props}>{props.label}</StyledButton>
-  </Theme>
   )
 };
 

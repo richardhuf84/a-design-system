@@ -1,6 +1,5 @@
 import React from "react";
 import styled from 'styled-components';
-import Theme from '../../Theme';
 import Text from '../Text/Text'
 
 const StyledColor = styled.div`
@@ -10,12 +9,11 @@ const StyledColor = styled.div`
   outline: 1px solid ${props => props.theme.color.grey.default};
 `;
 
-const Color = props => <Theme>
+const Color = props =>
   <div style={{ boxShadow: '0 0 4px rgba(0,0,0,0.4)', padding: '.375rem', display: 'inline-block' }}>
     <StyledColor {...props} />
     <Text tag="h3" weight="bold">{props.color}</Text>
     <Text tag="small">Hex: {props.theme}</Text>
-  </div>
-</Theme>;
+  </div>;
 
 export default Color;

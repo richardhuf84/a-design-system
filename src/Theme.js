@@ -1,5 +1,4 @@
-import React from 'react';
-import { ThemeProvider } from 'styled-components';
+const spacingBase = 4;
 
 const theme = {
   color: {
@@ -58,20 +57,16 @@ const theme = {
   },
   spacing: {
     s0: 0,
-    s1: 0.25 * 2,   // 4
-    s2: 0.5 * 2,    // 8
-    s3: 1 * 2,      // 16
-    s4: 1.5 * 2,    // 24
-    s5: 2 * 2,      // 32
-    s6: 2.5 * 2,    // 40
-    s7: 3 * 2,      // 48
-    s8: 3.5 * 2     // 56
+    s1: 0.25 * spacingBase,   // 4
+    s2: 0.5 * spacingBase,    // 8
+    s3: 1 * spacingBase,      // 16
+    s4: 1.5 * spacingBase,    // 24
+    s5: 2 * spacingBase,      // 32
+    s6: 2.5 * spacingBase,    // 40
+    s7: 3 * spacingBase,      // 48
+    s8: 3.5 * spacingBase     // 56
   }
 };
 
-const Theme = ({ children }) => (
-  <ThemeProvider theme={theme}>{children}</ThemeProvider>
-);
-
-export default Theme;
+export { theme };
 
