@@ -19,14 +19,18 @@
       "description": "Brand primary color"
     },
     "grey700": {
-      "value": "#777777",
+      "value": "#d1d1d1",
       "type": "color",
       "description": "Grey"
     },
     "textColor": {
-      "value": "#777777",
+      "value": "#d1d1d1",
       "type": "color",
       "description": "Brand primary color"
+    },
+    "orange": {
+      "value": "#e7ac18",
+      "type": "color"
     }
   },
   "spacing": {
