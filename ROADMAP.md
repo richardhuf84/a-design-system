@@ -1,0 +1,1 @@
+- Look at token Style Dictionary platform / format that preserves references / metadata. https://amzn.github.io/style-dictionary/#/formats?id=custom-format-with-output-references

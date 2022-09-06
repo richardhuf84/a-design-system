@@ -1,5 +1,4 @@
 import * as tokens from "./tokens.js";
-console.log(tokens);
 
 const theme = {
   color: {

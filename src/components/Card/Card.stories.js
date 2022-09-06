@@ -1,14 +1,13 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs'
-import { withKnobs } from '@storybook/addon-knobs';
 import Card from './Card';
 import Text from '../Text/Text';
 import Button from '../Button/Button';
 
 export default {
-  title: 'Card',
+  title: 'Components/Card',
   component: Card,
-  decorators: [withDesign, withKnobs],
+  decorators: [withDesign],
 };
 
 const Template = (args) => (

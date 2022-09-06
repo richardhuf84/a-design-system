@@ -1,20 +1,17 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs'
-import { action } from '@storybook/addon-actions';
-import { withKnobs, boolean } from '@storybook/addon-knobs';
-import createStory from '../../helpers/createStory.helper';
 import Button from './Button';
 
 export default {
-  title: 'Button',
+  title: 'Components/Button',
   component: Button,
-  decorators: [withDesign, withKnobs],
+  decorators: [withDesign],
   parameters: {
     componentSubtitle: 'Buttons are utilized to initiate an action.'
   },
   args: {
-    disabled: boolean("Disabled", false),
-    onClick: action('clicked')
+    disabled: false,
+    onClick: () => ({})
   }
 };
 
@@ -33,11 +30,28 @@ Primary.args = {
   primary: true
 };
 
+Primary.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A0',
+    allowFullscreen: true,
+  }
+}
+
+
 export const Secondary = Template.bind({});
 
 Secondary.args = {
   label: "Secondary Button",
   secondary: true
+}
+
+Secondary.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A17',
+    allowFullscreen: true,
+  }
 }
 
 export const Tertiary = Template.bind({});
@@ -47,9 +61,10 @@ Tertiary.args = {
   tertiary: true
 }
 
-
-createStory(Primary, 'Button Primary', 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A0')
-
-createStory(Secondary, 'Button Secondary', 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=129%3A17')
-
-createStory(Tertiary, 'Button Tertiary', 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=191%3A0')
+Tertiary.parameters = {
+  design: {
+    type: 'figma',
+    url: 'https://www.figma.com/file/ZiPw8PslQzYjpWPkPIRwGu/A-Design-System?node-id=191%3A0',
+    allowFullscreen: true,
+  }
+}

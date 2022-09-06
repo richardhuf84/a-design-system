@@ -1,5 +1,7 @@
 {
-  "source": ["public/input.json"],
+  "source": [
+    "public/input.json"
+  ],
   "platforms": {
     "js": {
       "transformGroup": "js",

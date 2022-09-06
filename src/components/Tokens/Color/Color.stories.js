@@ -1,10 +1,9 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs'
-import { withKnobs } from '@storybook/addon-knobs';
-import { ColorChip } from './Color.tokens';
-import * as tokens from '../../../tokens';
+import { ColorChip, StyledGrid } from './Color.tokens';
+import { theme } from '../../../Theme';
 
-console.log(tokens);
+const colors = Object.keys(theme.color) //.map(color => color.default);
 
 export default {
   args: {
@@ -17,11 +16,12 @@ export default {
   },
   title: 'Tokens/Color',
   component: ColorChip,
-  decorators: [withDesign, withKnobs],
+  decorators: [withDesign],
 };
 
-const Template = (args) => (
-  <ColorChip {...args} />
-);
-
-export const Default = Template.bind({});
+export const ColorTokens = (args) => (
+  <StyledGrid>{
+    colors.map((color, index) => <ColorChip color={color} key={index} />)
+  }
+  </StyledGrid>
+)
