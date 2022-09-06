@@ -31,6 +31,9 @@ const theme = {
     textColor: {
       default: tokens.ColorsTextColor,
     },
+    accent: {
+      default: tokens.ColorsAccent,
+    },
   },
   border: {
     radius: `8px`,

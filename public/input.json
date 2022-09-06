@@ -9,14 +9,14 @@
       "type": "color",
       "description": "A white color"
     },
+    "brandSecondary": {
+      "value": "#72e5ec",
+      "type": "color"
+    },
     "brandPrimary": {
       "value": "#9ba0de",
       "type": "color",
       "description": "Brand primary color"
-    },
-    "brandSecondary": {
-      "value": "#72e5ec",
-      "type": "color"
     },
     "grey700": {
       "value": "#d1d1d1",
@@ -30,6 +30,10 @@
     },
     "orange": {
       "value": "#e7ac18",
+      "type": "color"
+    },
+    "Accent": {
+      "value": "#ca1696",
       "type": "color"
     }
   },
@@ -81,6 +85,10 @@
     "raleway": {
       "value": "Raleway",
       "type": "fontFamilies"
+    },
+    "irish-grover": {
+      "value": "Irish Grover",
+      "type": "fontFamilies"
     }
   },
   "lineHeights": {
@@ -90,6 +98,10 @@
     },
     "1": {
       "value": 32,
+      "type": "lineHeights"
+    },
+    "2": {
+      "value": 26,
       "type": "lineHeights"
     }
   },
@@ -101,14 +113,22 @@
     "raleway-1": {
       "value": "Bold",
       "type": "fontWeights"
+    },
+    "irish-grover-2": {
+      "value": "Regular",
+      "type": "fontWeights"
     }
   },
   "fontSize": {
     "0": {
-      "value": 16,
+      "value": 14,
       "type": "fontSizes"
     },
     "1": {
+      "value": 16,
+      "type": "fontSizes"
+    },
+    "2": {
       "value": 24,
       "type": "fontSizes"
     }
@@ -161,6 +181,25 @@
     "none": {
       "value": "none",
       "type": "textDecoration"
+    }
+  },
+  "font": {
+    "component": {
+      "button": {
+        "lg": {
+          "value": {
+            "fontFamily": "Irish Grover",
+            "fontWeight": "Regular",
+            "lineHeight": 26,
+            "fontSize": 14,
+            "letterSpacing": "0%",
+            "paragraphSpacing": 0,
+            "textCase": "none",
+            "textDecoration": "none"
+          },
+          "type": "typography"
+        }
+      }
     }
   }
 }

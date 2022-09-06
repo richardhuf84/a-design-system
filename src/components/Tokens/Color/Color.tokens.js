@@ -30,6 +30,7 @@ export const StyledGrid = styled.div`
 export const ColorChip = ({ color }) => (
   <StyledWrapper>
     <StyledColorChip color={color} />
+    <p>Color: {color}</p>
     <p>Hex: {theme.color[color]?.default}</p>
   </StyledWrapper>
 )
