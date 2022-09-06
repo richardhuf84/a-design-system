@@ -1,21 +1,26 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs'
-import { withKnobs, select } from '@storybook/addon-knobs';
 import SvgHouse from './House';
 
+const sizes = ['small', 'medium', 'large'];
 
 export default {
   title: 'Icon House',
   component: SvgHouse,
-  decorators: [withDesign, withKnobs],
+  decorators: [withDesign],
   parameters: {
     componentSubtitle: 'One icon to rule them all'
+  },
+  argsTable: {
+    size: {
+      control: {
+        type: 'select',
+        options: sizes
+      }
+    }
   }
 };
 
-const sizes = ['small', 'medium', 'large'];
 
-export const IconHouse = () => <SvgHouse
-  size={select('Size', sizes, sizes[0])}
-
-/>;
+export const IconHouse = (args) => <SvgHouse
+  {...args} />;

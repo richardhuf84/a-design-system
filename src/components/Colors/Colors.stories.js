@@ -1,26 +1,25 @@
 import React from 'react';
 import { withDesign } from 'storybook-addon-designs';
-import { withKnobs } from '@storybook/addon-knobs';
 import Color from './Colors';
 
+const colors = ['primary', 'secondary', 'tertiary', 'dark', 'light', 'grey'];
 export default {
   title: 'Color',
   component: Color,
-  decorators: [withDesign, withKnobs],
+  decorators: [withDesign],
   parameters: {
     componentSubtitle: 'Colors make life worth living'
+  },
+  argsTable: {
+    color: {
+      control: {
+        type: 'select',
+        options: colors
+      }
+    }
   }
 };
 
-export const ColorPrimary = () => <Color color="primary" />;
+const Template = (args) => <Color {...args} />;
 
-export const ColorSecondary = () => <Color color="secondary" />;
-
-export const ColorTertiary = () => <Color color="tertiary" />;
-
-export const ColorDark = () => <Color color="dark" />;
-
-export const ColorLight = () => <Color color="light" />;
-
-export const ColorGrey = () => <Color color="grey" />;
-
+export const Default = Template.bind({});
