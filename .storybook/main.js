@@ -11,6 +11,6 @@ module.exports = {
     '@storybook/addon-backgrounds',
     '@storybook/addon-knobs',
     'storybook-addon-jsx',
-    '@storybook/preset-create-react-app'
+    '@storybook/preset-create-react-app',
   ],
 };
