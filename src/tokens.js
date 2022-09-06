@@ -1,14 +1,15 @@
 /**
  * Do not edit directly
- * Generated on Sun, 04 Sep 2022 13:04:37 GMT
+ * Generated on Tue, 06 Sep 2022 11:46:00 GMT
  */
 
 export const ColorsBlack = "#000000";
 export const ColorsWhite = "#ffffff";
-export const ColorsBrandSecondary = "#72e5ec";
 export const ColorsBrandPrimary = "#9ba0de";
-export const ColorsGrey700 = "#777777";
-export const ColorsTextColor = "#777777";
+export const ColorsBrandSecondary = "#72e5ec";
+export const ColorsGrey700 = "#d1d1d1";
+export const ColorsTextColor = "#d1d1d1";
+export const ColorsOrange = "#e7ac18";
 export const SpacingSm = 4;
 export const SpacingMd = 8;
 export const SpacingLg = 16;

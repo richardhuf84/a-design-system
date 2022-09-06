@@ -9,24 +9,28 @@
       "type": "color",
       "description": "A white color"
     },
-    "brandSecondary": {
-      "value": "#72e5ec",
-      "type": "color"
-    },
     "brandPrimary": {
       "value": "#9ba0de",
       "type": "color",
       "description": "Brand primary color"
     },
+    "brandSecondary": {
+      "value": "#72e5ec",
+      "type": "color"
+    },
     "grey700": {
-      "value": "#777777",
+      "value": "#d1d1d1",
       "type": "color",
       "description": "Grey"
     },
     "textColor": {
-      "value": "#777777",
+      "value": "#d1d1d1",
       "type": "color",
       "description": "Brand primary color"
+    },
+    "orange": {
+      "value": "#e7ac18",
+      "type": "color"
     }
   },
   "spacing": {
